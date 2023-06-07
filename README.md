@@ -52,10 +52,10 @@ Solana Pay is a specification for payments on Solana. It describes a way to enco
 
 In short, Solana Pay makes payments work IRL, really well. It works because of those features of Solana: it’s as fast as any card machine, and it’s miles cheaper than any credit card processor.
 
-Tarayıcı Cüzdanı
+Browser Wallet
 ------------------
 
-Browser Wallet
+
 
 We’re going to start by getting a browser wallet set up, which we’ll use to get you onboarded to the Solana blockchain! Like in other blockchains, wallets are what we use to track our balances and interact with applications. If you already have a Solana wallet set up then feel free to speed through this!
 
