@@ -103,3 +103,58 @@ Son bir şey, Phantom'da (ve çoğu cüzdan uygulamasında) cüzdanlarınızı t
 Başlangıç Kodunu İndirin
 ----------------------------
 Bu öğretici Solana Pay ile ilgili olduğu için Html,Css ve Javascript kullanarak oluşturulan template kodunu hazır olarak çekiyoruz.
+
+$ git clone -b start https://github.com/Yusufcihan1/Solana-Pay-Tutorial
+
+Bu bir NextJS uygulamasıdır. npm ile çalıştırabilirsiniz:  
+
+$ npm install
+$ npm run dev
+
+Varsayılan olarak localhost:3000 üzerinde çalışır. Çalışırken tarayıcınızda açın ve şöyle bir şey görmelisiniz:
+
+![11](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/47859b46-98e0-4343-a889-c717f4d85bf7)
+
+Başlangıç kodu size bazı ürünleri seçip sipariş verebileceğimiz basit bir e-ticaret arayüzü sunar!Bu ödeme sayfası şu anda biraz çıplak görünüyor.
+
+KODUMUZU ÖZELLEŞTİRELİM
+--------------------------
+Görüntülenen ürünler lib/products.ts 'dedir, tanımlama bilgileri dışında bir şey satmak istiyorsanız bunları değiştirmekten çekinmeyin!
+
+```
+export const products = [
+  {
+    id: 'box-of-cookies',
+    name: 'Box',
+    description: 'A delicious box of handmade cookies',
+    unitName: 'box', // shows after the price, eg. 0.05 SOL/box
+    priceSol: 0.05,
+    priceUsd: 5,
+  },
+  {
+    id: 'basket-of-cookies',
+    name: 'Basket',
+    description: 'A large basket of handmade cookies',
+    unitName: 'basket',
+    priceSol: 0.1,
+    priceUsd: 10,
+  }
+]
+```
+
+Renklerin, yazı tiplerinin hayranı değilseniz, bu sizin uygulamanız! İstediğinizi değiştirmekte özgürsünüz :)
+
+SATIŞ MANTIĞI
+------------------------
+Solana Pay ile ödemeleri almak için bir satış noktası uygulaması oluşturmaya göz atmadan önce, uygulamamızın basit bir e-ticaret mağazası gibi çalışmasını sağlayalım.Kullanıcıların siparişleri için tarayıcı cüzdanlarında SOL kullanarak ödeme yapmasına izin verelim. Bu bize Solana işlemlerinin nasıl çalıştığı (daha fazlasını ileride göreceğiz!) ve Solana Pay'in perde arkasında ne yaptığı hakkında bir fikir verecektir.
+
+Bazı bağımlılıkları yükleyerek başlayalım. Bunlar Solana tarafından sağlanır ve güzel bir kullanıcı arayüzü ve React entegrasyonu ile cüzdan bağlantısını yönetir:
+
+$ npm install @solana/web3.js @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-base @solana/wallet-adapter-wallets
+
+Daha sonra bileşen hiyerarşimizin en üstüne Solana bağlantısını ve bağlı cüzdanı işlemek için kod eklememiz gerekiyor. Blok zincirine istekte bulunmak için bir Solana bağlantısını ve kullanıcıdan ödeme yapmasını istemek için bağlı cüzdanı kullanacağız. Pages/ app.tsx'i aşağıdaki gibi görünecek şekilde güncelleyin:
+
+
+
+
+
