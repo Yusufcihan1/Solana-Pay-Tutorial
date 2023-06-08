@@ -50,8 +50,9 @@ This ain’t your grandma’s blockchain!
 
 Their website shows some stats, here’s what they look like for me as I’m writing this:
 
+![tutorial_W4JYPwWhtMzTJm91MqzkU](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/e1623a25-fcbb-4537-a837-78ecd5184c4e)
 
-![image](https://github.com/Yusufcihan1/Solana-Pay-Marketplace-Uygulamasi/assets/50721899/e863db97-4aaf-47f6-80dd-3fbeb17c162a)
+
 
 -The network is handling 2,070 transactions per second
 
@@ -78,7 +79,8 @@ The most popular browser wallet is called Phantom, and you can download it from 
 
 When Phantom first launches you’ll have the option to create a new wallet or import an existing one:
 
-<img width="448" alt="4" src="https://github.com/Yusufcihan1/Solana-Pay-Marketplace-Uygulamasi/assets/50721899/338da127-626b-4b02-a8c6-428f4ec98d18">
+<img width="448" alt="tutorial_NkbsjFlyOCxCC8_pDcSCS" src="https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/cccb04dd-1f38-465c-849f-57a39488d620">
+
 
 Click “Create a new wallet” unless you’ve used Solana before. Quick heads up on terminology, a wallet that you create here is also an “Account”. We’ll get into the account model of Solana later, but you might see that term as you look around.
 
@@ -88,7 +90,8 @@ You’ll then be presented with your Secret Recovery Phrase. If you’ve used an
 
 Once you’re done with the setup you’ll be able to see your wallet in Phantom:
 
-<img width="377" alt="5" src="https://github.com/Yusufcihan1/Solana-Pay-Marketplace-Uygulamasi/assets/50721899/75fb9ddf-0ea2-43dd-b886-371da3ddd3d0">
+<img width="377" alt="tutorial_wgepRg6lqNRfbsieq-VZv" src="https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/4f16f188-cdfe-471b-96ca-b31eb438e37b">
+
 
 Before we do anything else let’s switch to Devnet. On devnet all the tokens are fake and have no real world value, so it’s great for learning! We can also send ourselves Solana for free which is handy!
 
@@ -124,13 +127,15 @@ When we’re dealing with payments we need two accounts: one for the buyer and o
 
 In Phantom you can open the menu from the top left and add a new wallet:
 
-<img width="360" alt="9" src="https://github.com/Yusufcihan1/Solana-Pay-Marketplace-Uygulamasi/assets/50721899/42c4ae26-2163-4925-b827-17fb50200fd7">
+<img width="365" alt="tutorial_b-4nwBRs2fbukEeDHTl4y" src="https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/30375979-dcfe-4367-8259-9e5bc1560277">
+
 
 Note that you won’t be asked to give a password or shown a Secret Recovery Phrase. Remember that the password is for the Phantom extension (it unlocks all wallets), and the Secret Recovery Phrase is for all wallets too!
 
 One last thing, in Phantom (and most wallet apps) you can name your wallets to make them easier to identify. This is under Settings:
 
-<img width="365" alt="10" src="https://github.com/Yusufcihan1/Solana-Pay-Marketplace-Uygulamasi/assets/50721899/16d09d71-1196-41b7-b422-78d315a70a0d">
+<img width="360" alt="tutorial_ZwWpUwYf7XSAlTW5FUBAz" src="https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/adfefe27-5dd0-4d4a-b66b-440e9a2dad9c">
+
 
 I recommend naming the first wallet (the one with SOL) “Buyer” and the second one “Shop”. Note that these names are just for you, they won’t be reflected on the blockchain at all. But they’ll make using Phantom a lot nicer!
 
