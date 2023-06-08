@@ -28,11 +28,11 @@ We’re going to build a point-of-sale web app that allows us to take payments f
 We’re also going to look at online payments in Solana, and build a loyalty card scheme. You can do things like give users a 50% discount on every 5th purchase. Or whatever you like really, it’s super flexible. We’ll finish up with a sneak peek at some really cool upcoming Solana Pay functionality that pulls all of this together!
 
 
-![12345](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/52376208-c10c-4882-87f5-96c37c5eeba5)![123](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/d8337f8a-6f77-4b6e-bb77-04bb4769e026)
+![12345](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/52376208-c10c-4882-87f5-96c37c5eeba5)
+------------------------------------------------------------------------------------------------------------------------------
+![123](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/d8337f8a-6f77-4b6e-bb77-04bb4769e026)
 ------------------------------------------------------------------------------------------------------------------------------
 ![1234](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/d418b2c8-e57b-4385-ac3d-7ed7008ed49d)
-------------------------------------------------------------------------------------------------------------------------------
-![Uploading 12345.gif…]()
 ------------------------------------------------------------------------------------------------------------------------------
 
 You can see our demo app at https://sol-music-shop-v8bx-5p1q2u2zc-yusufcihan1.vercel.app/
