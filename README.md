@@ -7,9 +7,10 @@
 <img src="https://solanapay.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsolanapay-logo.e34e7b7f.svg&w=256&q=75"/>
 
 ### **Welcome 👋**
+
  
  
- TUTORIAL : Taking Payments IRL with Solana Pay
+ **TUTORIAL : Taking Payments IRL with Solana Pay**
  -------------------------------------
 
 We’re excited to partner with our friends at Solana to bring you this in-depth guide to payments on Solana.
@@ -17,7 +18,7 @@ We’re excited to partner with our friends at Solana to bring you this in-depth
 Let’s get started!
 
 
-What we're building
+**What we're building**
 ---------------------
 
 We’re going to build a point-of-sale web app that allows us to take payments from customers in person. We’ll present a QR code that they can scan with a Solana wallet to make the payment. As soon as they do our app will update to show that they’ve paid. It’s pretty magic, and you’ll see just how easy it is to make it work!
@@ -33,7 +34,7 @@ We’re also going to look at online payments in Solana, and build a loyalty car
 
 You can see our demo app at https://sol-music-shop-v8bx-5p1q2u2zc-yusufcihan1.vercel.app/
 
-Why Solana?
+**Why Solana?**
 -------------------
 
 Well first, what is Solana? It’s a blockchain that developers can build awesome apps on! It has two main features that make it amazing for the payment use case:
@@ -63,7 +64,7 @@ Solana Pay is a specification for payments on Solana. It describes a way to enco
 
 In short, Solana Pay makes payments work IRL, really well. It works because of those features of Solana: it’s as fast as any card machine, and it’s miles cheaper than any credit card processor.
 
-Browser Wallet
+**Browser Wallet**
 ------------------
 
 
@@ -90,7 +91,7 @@ Before we do anything else let’s switch to Devnet. On devnet all the tokens ar
 
 In Phantom, go to Settings (gear icon in the bottom right), choose “Change Network” and select “Devnet”.
 
-Get some devnet SOL
+**Get some devnet SOL**
 --------------------
 
 Okay so that “0 SOL” thing is pretty boring, let’s get some Solana to play with! Head to https://solfaucet.com/ and put in your address. In Phantom your address is shown truncated at the top and you can click to copy the whole thing:
@@ -113,7 +114,7 @@ Did I mention that Solana is fast? 🚀
 
 Check Phantom and you’ll see your balance is now 1 SOL! Nice!
 
-Adding a second wallet (account)
+**Adding a second wallet (account)**
 -----------------------------------
 
 When we’re dealing with payments we need two accounts: one for the buyer and one for the seller. The buyer pays the seller! So far we’ve made one account and given it some SOL which it can use to buy stuff. Let’s make our seller account next.
@@ -133,7 +134,7 @@ I recommend naming the first wallet (the one with SOL) “Buyer” and the secon
 
 
 
-Grab the starter code
+**Grab the starter code**
 ----------------------------
 That was a lot of setup, but now we’ve got your Solana wallets set up, we’ve got SOL in the buyer wallet and we’re ready to use it to buy stuff. Let’s start building our app!
 
@@ -152,7 +153,7 @@ By default it’ll run on localhost:3000. When it’s running, open it in your b
 
 The starter code gives you a simple ecommerce interface, where we can select some products and make an order! Although that checkout page is looking a bit bare right now.
 
-Customize it
+**Customize it**
 --------------------
 
 The products displayed are in lib/products.ts, feel free to change them if you’d like to sell something other than cookies!
@@ -183,7 +184,7 @@ If you’re not a fan of the colours, fonts, whatever - it’s your app! Feel fr
 
 When you’re happy with the starting code, go on to the next lesson and we’ll start building together!
 
-Our first sale
+**Our first sale**
 ------------------------
 Before we take a look at building a point-of-sale app for taking IRL payments with Solana Pay, let’s make our app work as a simple e-commerce store: allow users to pay for their cookie order using SOL in their browser wallet. That’ll give us an idea of how Solana transactions work (we’ll see lots more of them later!) and what Solana Pay is doing behind the scenes.
 
@@ -293,7 +294,7 @@ Nice! We can connect the wallet and check out. Our checkout page doesn’t do an
 In reality we’d need to collect more information for an e-commerce purchase, like the buyer’s name and where they want their cookies delivered. Since we’re just using this to understand the Solana structures though, we’re going to skip that here.
 ```
 
-Generating the transaction
+**Generating the transaction**
 ----------------------
 We could generate the transaction on the frontend, and send it to the user’s wallet. You might’ve seen apps that do this, for example for buying NFTs. But in an e-commerce use case, it makes more sense to use an API route to generate the transaction because that gives us the ability to record expected transactions reliably. Remember that any code we run on the frontend can be modified by the client!
 
@@ -502,7 +503,7 @@ One last thing before we move on: In reality you’d want to record this transac
 That was a lot of theory! Let’s update our app so that we can call this API and see the transaction in practice.
 
 
-Requesting the transaction
+**Requesting the transaction**
 ----------------------
 
 First let’s just make sure that we can call this API and deserialize the returned transaction back.
@@ -723,7 +724,7 @@ Otherwise, we first show a little loading indicator while we fetch the transacti
 
 ![16](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/d40d14cf-0a46-4801-94da-41cdc630796b)
 
-Sending the transaction
+**Sending the transaction**
 ----------------------
 Okay nice, we’ve got a transaction from our API! Now let’s update the page to send that to the user’s wallet and ask them to approve it.
 
@@ -907,7 +908,7 @@ And that’s all we have to do to send a transaction!
 
 
 
-Detecting Payment
+**Detecting Payment**
 ----------------------------
 
 The UX so far is a bit limited, once we present the transaction the user has to go and check their own wallet to see that they’ve paid. We can do way better than that!
@@ -1108,7 +1109,7 @@ If you refresh and approve the transaction, you should see a log message indicat
 
 Now we just need to let the user know that we’ve received their payment!
 
-Adding a /confirmed page
+**Adding a /confirmed page**
 -------------------------
 We’re going to add a new page to tell the user that their payment has been accepted.
 
@@ -1205,7 +1206,7 @@ At this point we can sell cookies on our site using Solana!
 But lots of people coming into our cookie shop might not know what the value of a SOL is. It’d be nice if we could charge them in dollars instead! That’s what we’ll explore in the next step.
 
 
-Charging Dollars
+**Charging Dollars**
 ----------------------------
 We can’t exchange literal US dollars on the Solana blockchain. But Solana does have a program that handles exchanging arbitrary tokens, in addition to SOL. You might have heard of these tokens before (they’re sometimes called altcoins or fungible tokens). In Solana, they’re called SPL tokens, SPL stands for Solana Program Library. We can hold these tokens in our wallets and pay/receive them in Solana transactions.
 
@@ -1213,7 +1214,7 @@ Some of these tokens are designed to have a fixed value in fiat currency, most o
 
 A popular stablecoin is USDC, which is available on many blockchains including Solana. But since we’re on Solana devnet we need to use a token that’s available there, which we’re going to call USDC-Dev.
 
-Getting some USDC-Dev
+**Getting some USDC-Dev**
 -----------------------
 
 We’re going to use a token faucet: https://spl-token-faucet.com/?token-name=USDC-Dev
@@ -1247,7 +1248,7 @@ As long as it’s showing the token you’re good to go though!
 Before continuing, make sure you use your wallet or the same faucet to send some USDC to your shop account too. For now, we need the shop account to have some USDC before transferring it in our own code. Later on, we'll see how to avoid needing to do this :)
 
 
-Updating our UI
+**Updating our UI**
 --------------------------------
 
 Now that our buyer has some USDC-Dev, let’s update our app so that they can use it to buy our cookies!
@@ -1298,7 +1299,7 @@ Solution (components/Products.tsx) :
 Nice! We’re displaying our cookie prices in dollars on our store. Next we need to update our API to create a transaction priced in USDC instead of SOL.
 
 
-Updating our API
+**Updating our API**
 -------------------------
 
 Our API uses the function calculatePrice in lib/calculatePrice.ts to get the total price of the cookies being bought. We need to update that to use the priceUsd field:
@@ -1486,7 +1487,7 @@ Once approved you’ll see our familiar confirmed page! We’ve updated our app 
 In the next lesson we’re going to jump into Solana Pay properly and see how we can take payments IRL without users having to connect their own wallet to our app to pay!
 
 
-SOLANA PAY
+**SOLANA PAY**
 ----------------------
 The magic of Solana Pay is that it takes the speed and tiny fees we’ve seen from the Solana network and it makes it work for in-person payments. Any shop, any market stall, can take payments without signing up for any services and without paying credit card processing fees. And it’s really cool to see it in action!
 
@@ -1521,7 +1522,7 @@ The best way to get the private key between devices is using a password manager 
 
 Note that we don’t need the Shop wallet on mobile, but if you want it there then feel free to import it too.
 
-Point of Sale Page
+**Point of Sale Page**
 ----------------------
 
 Let’s start by creating the page where we select the cookies somebody wants to buy. This will look super familiar because that’s what our ecommerce page does, we just don’t want all that stuff about connecting a wallet 🙂
@@ -1548,7 +1549,7 @@ You can add cookies, but if you checkout then you’ll get a 404. We don’t hav
 
 
 
-Checkout Page
+**Checkout Page**
 ---------------
 Create a new file pages/shop/checkout.tsx. Here’s some starter code, it’s just the starter code from pages/checkout.tsx but using USD:
 ```
@@ -1705,7 +1706,7 @@ This is a real Solana transaction! You can send it using the mobile wallet, and 
 
 Just like we did with the ecommerce checkout page, we can detect that payment and show the confirmation page. When we see that we can give them the cookies because they’ve paid!
 
-Detecting Payment
+**Detecting Payment**
 -------------------
 First let’s add a new pages/shop/confirmed.tsx, this is what we’ll redirect to after we see the payment. It’ll look very familiar:
 ```
@@ -1954,7 +1955,7 @@ At this point you have Solana Pay working! When you approve the payment in your 
 ![tutorial_WqUwdeE-_azecW4lR-ObG](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/0d079415-3ab5-44cb-8b1a-5306f439e693)
 So far Solana Pay is able to do exactly what our makeTransaction API is doing: it’s just transferring USDC from the buyer to the shop. This is called a transfer request. In the next lesson, we’re going to discuss a more powerful specification called transaction requests. It'll let us do some really cool things!
 
-Transaction Requests
+**Transaction Requests**
 -----------------------
 So far the transactions we’ve dealt with - both ones created by our API and those handled by Solana Pay - have been very simple. We’ve just been writing transactions that do a single transfer, either SOL or USDC.
 
@@ -1983,7 +1984,7 @@ Not coincidentally, that POST request is exactly the same shape as the API we’
 
 Another really important and powerful feature here is that the account is sent to our API when the transaction is requested. We’re currently using that to get the USDC account for that user in our transaction. But we could do things like looking at the user’s balances or tokens on the blockchain, or their transaction history, and return a different transaction depending on who the buyer is. Maybe we want holders of a certain NFT to get a discount at our cookie shop? Maybe we want to give new customers who usually go to a lame competing cookie shop some extra loyalty coupons? Knowing the buyer’s address gives us a huge amount of flexibility! And with transaction requests, we can do all of this for IRL payments, as well as on our site.
 
-Handling the GET request
+**Handling the GET request**
 ----------------------------
 
 Our API already does the most complicated part of transaction requests: returning a serialized transaction. But let’s extend it to handle the GET request too, so we’ll be able to use our API with mobile wallets.
@@ -2147,7 +2148,7 @@ The handler function just checks the request method and calls either get or post
 
 Nice! Now our API is fully compatible with the transaction requests specification. Before we make our transaction more powerful, let's get it working in our shop.
 
-Updating the QR code
+**Updating the QR code**
 -----------------------
 
 Currently our shop checkout page is displaying a QR code for a transfer request. We're going to update it to instead display a transaction request, pointing at our /api/makeTransaction API. Then when we add functionality to that API, it'll work for customers in our shop as well as online.
@@ -2322,7 +2323,7 @@ At this point if you try to make a purchase from your /shop page you'll see a QR
 ![32](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/09ed1466-dbec-4796-813b-86021a142bff)
 The reason for this is that the API URL we've encoded is http://localhost:3000/... and for security Solana Pay requires https URLs. The common ways to run https locally are a bit fiddly here too because remember it's our phone that's making the request. The easiest way to get this working is using a tool called ngrok.
 
-Testing with ngrok
+**Testing with ngrok**
 -----------------------
 Ngrok will provide us a HTTPS URL accessible from anywhere, that points at our localhost:3000 port. That'll make transaction requests super easy to test! If you've used ngrok before then feel free to skim over this setup.
 
@@ -2359,7 +2360,7 @@ And when you pay the UI will update, just like it did with the transfer request.
 
 Now our app uses transaction requests to share the same transaction between online and in-shop payments. In the next lesson we're going to look at introducing a loyalty coupon to our store. We'll do this by updating /api/makeTransaction and now our enhancements there will apply wherever people are buying our cookies! All we have to do is update the transaction our API returns and the behaviour will update everywhere.
 
-Loyalty Scheme
+**Loyalty Scheme**
 --------------------
 Let’s say some other cookie shops are opening near our store. In addition to our superior cookies, we want to use a loyalty scheme to keep our customers coming back!
 
@@ -2371,7 +2372,7 @@ We can use an SPL token to create something like this, where the current number 
 
 Using Solana transactions, we’ll be able to guarantee that everybody who buys our cookies gets a coupon with every purchase. And using that account input to our API, we’ll be able to check the current balance and automatically send a transaction where they can use their coupons and receive a discount if they have enough coupons. Users will never forget their coupon card!
 
-Creating a coupon
+**Creating a coupon**
 ---------------------
 
 There’s a CLI that we can install to create tokens: https://spl.solana.com/token#reference-guide - you’re welcome to install this and use it if you’d like to. The Solana CLI is very powerful and definitely worth getting familiar with at some point. For this tutorial though we’re going to stay in Javascript and use functions from the @solana/spl-token library that we’ve already seen.
@@ -2499,7 +2500,7 @@ You should also be able to see the token in Phantom, under the Shop account:
 You might find it a bit odd that we don’t have any metadata associated with our token, like a name or logo. This metadata is primarily stored in this Github repo:  which most wallets will read to get information about tokens. That’s where our USDC-Dev metadata is! There’s no need to add your coupon for this tutorial and we don’t need to spam them, but if you were shipping this for real then you could :)
 ```
 
-Displaying the user’s coupon balance
+**Displaying the user’s coupon balance**
 ------------------------------------
 
 Let’s get our coupon onto our site!
@@ -2618,7 +2619,7 @@ Now if you visit your home page and connect your wallet (make sure you switch ba
 ![38](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/750782a6-9bbe-471f-86fe-034c6eeef53f)
 The coupon balance will show as 0, because the buyer wallet doesn’t have a token account yet. There’s only one Holder of our coupon ATM, and it’s the shop. Let’s look at how we can send a coupon to our buyer!
 
-Sending a coupon to the buyer
+**Sending a coupon to the buyer**
 ---------------------------------
 
 We need to update our pages/api/makeTransaction.ts to create a transaction that, in addition to sending USDC from the buyer to our shop, sends a coupon from the shop to the buyer. I’ll show you the new code and then I’ll talk through what’s changed:
@@ -2854,7 +2855,7 @@ Since the shop is now sending a token to the user, it must sign this transaction
 
 So now our API is producing a transaction where the buyer sends us USDC and we send a coupon back. It’s signed by our shop, which actually gives us some nice extra protection. Nobody can modify this transaction without invalidating the shop’s signature, and if they do that then the transaction can’t be processed. So when we’re reviewing the e-commerce transactions we don’t need to go checking the transaction details anymore, we just need to check we’ve signed it!
 
-Receiving Coupons
+**Receiving Coupons**
 -----------------------
 
 If you make a purchase from your home page now then the transaction sent to your wallet should look something like this:
@@ -3166,7 +3167,7 @@ Now if the buyer has less than the full 5 coupons then they should get the same 
 <img width="1039" alt="41" src="https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/bae17f47-7f6e-43d7-8e21-19deaa4fb54f">
 We now have a complete automated loyalty scheme built on Solana! We send a coupon with each purchase of our cookies and automatically provide the discount to any buyer who is eligible. Our site displays their coupon balance, and any Solana wallet can too. Nobody’s going to choose any of those lame other cookie shops now!
 
-Back to mobile
+**Back to mobile**
 -------------------
 
 What about in-shop payments? They use this API so they automatically work exactly the same. Wherever people buy our cookies they receive our loyalty coupon and they get the automatic discount. You'll just need to run ngrok http 3000 and use that URL like before. Here's a lil demo where we get the 50% discount by scanning a QR code:
@@ -3174,7 +3175,7 @@ What about in-shop payments? They use this API so they automatically work exactl
 
 ![tutorial_SnDFh3py-QYH00TloFABN](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/53cf0f19-a7a7-423f-88e4-e6af50388378)
 
-🎉 Wrapping Up
+**🎉 Wrapping Up**
 ------------------
 Table of Contents
 We’ve covered a lot of ground in this tutorial, and I hope you’re hyped about Solana after this whirlwind tour! Its speed really is a game-changer, and Solana Pay is a super exciting example of what it enables.
