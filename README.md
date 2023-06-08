@@ -17,6 +17,8 @@ We’re excited to partner with our friends at Solana to bring you this in-depth
 
 Let’s get started!
 
+![42](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/0707dee2-9de9-431e-975d-139ccb6b86dc)
+
 
 **What we're building**
 ---------------------
