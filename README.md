@@ -16,7 +16,9 @@
  -------------------------------------
 This tutorial is for beginners. All concepts are explained in detail. The complete version of the code is included in places where you might get stuck.
 We’re excited to partner with our friends at Solana to bring you this in-depth guide to payments on Solana.
+
 References : https://www.soldev.app/course/solana-pay
+
 
 Let’s get started!
 
