@@ -6,6 +6,8 @@
 
 <img src="https://solanapay.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsolanapay-logo.e34e7b7f.svg&w=256&q=75"/>
 
+
+
 ### **Welcome 👋**
 
  
@@ -14,10 +16,13 @@
  -------------------------------------
 This tutorial is for beginners. All concepts are explained in detail. The complete version of the code is included in places where you might get stuck.
 We’re excited to partner with our friends at Solana to bring you this in-depth guide to payments on Solana.
+References : https://www.soldev.app/course/solana-pay
 
 Let’s get started!
 
-![42](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/0707dee2-9de9-431e-975d-139ccb6b86dc)
+
+![0_n0aoCDIzixRckHdZ](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/01369504-cc9a-4310-8c6b-242e286756b0)
+
 
 
 **What we're building**
