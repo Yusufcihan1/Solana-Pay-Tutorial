@@ -9,7 +9,7 @@
 ### **Welcome 👋**
  
  
- Taking Payments IRL with Solana Pay
+ TUTORIAL : Taking Payments IRL with Solana Pay
  -------------------------------------
 
 We’re excited to partner with our friends at Solana to bring you this in-depth guide to payments on Solana.
