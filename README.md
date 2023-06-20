@@ -12,7 +12,7 @@
 
  
  
- **CREATE YOUR E-COMMERCE WEB APP USING SOLANA**
+ **CREATE YOUR E-COMMERCE WEB APP USING SOLANA PAY**
  -------------------------------------
 This tutorial is for beginners. All concepts are explained in detail. The complete version of the code is included in places where you might get stuck.
 
