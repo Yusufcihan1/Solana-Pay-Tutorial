@@ -36,7 +36,7 @@ We’re also going to look at online payments in Solana, and build a loyalty car
 
 ![12345](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/52376208-c10c-4882-87f5-96c37c5eeba5)
 ------------------------------------------------------------------------------------------------------------------------------
-![123](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/d8337f8a-6f77-4b6e-bb77-04bb4769e026)
+![Adsız](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/a826ee4a-fe0e-4ad4-a4e4-854e8dbabcaa)
 ------------------------------------------------------------------------------------------------------------------------------
 ![1234](https://github.com/Yusufcihan1/Solana-Pay-Tutorial/assets/50721899/d418b2c8-e57b-4385-ac3d-7ed7008ed49d)
 ------------------------------------------------------------------------------------------------------------------------------
